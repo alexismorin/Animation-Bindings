@@ -30,4 +30,10 @@ At the simplest level, the *Animation Bindings* system allows the animator to ea
 
 ### Extending the System
 
-Relying on only three components, the Animation Bindings is easily extendable if you require more control over niche game object parameters.
+Relying on only three components, the Animation Bindings is easily extendable if you require more control over niche game object parameters. both the Animation Link and Common Events script are well documented and can be easily appended without issue. 
+
+![extendable](images/extendable.png)
+
+
+
+Crafted by [Alexis Morin](https://github.com/alexismorin) in friendly partnership with [e→d films](https://edfilms.net/)
