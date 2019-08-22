@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GCAPAnimationLink : MonoBehaviour
+public class AnimationLink : MonoBehaviour
 {
     float gatheredValue;
     Vector3 startPosition;
     Vector3 startRotation;
 
     [SerializeField]
-    GCAPAnimationBinding animationBinding = null;
+    AnimationBinding animationBinding = null;
 
     [Space(10)]
 

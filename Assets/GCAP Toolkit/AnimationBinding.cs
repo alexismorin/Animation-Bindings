@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GCAPAnimationBinding : MonoBehaviour
+public class AnimationBinding : MonoBehaviour
 {
     [SerializeField]
     public float currentValue = 0f;
@@ -19,7 +19,7 @@ public class GCAPAnimationBinding : MonoBehaviour
     float delay = 0f;
 
     [HideInInspector]
-    public List<GCAPAnimationLink> links = new List<GCAPAnimationLink>();
+    public List<AnimationLink> links = new List<AnimationLink>();
 
 
 
