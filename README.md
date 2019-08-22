@@ -14,7 +14,7 @@ At the simplest level, the *Animation Bindings* system allows the animator to ea
 
 ![binding](images/binding.png)
 
-- An **Animation Binding** component is created and set up. Inside of the component, the user can not only adjust what will it output (whether it be pure numerical values or C# events) but how it is interacted with. Any input set-up from inside of Unity's input system is compatible, from keyboard input to VR motion controllers. 
+- An **Animation Binding** component is created and set up. Inside of the component, the user can not only adjust what will it output (whether it be pure numerical values or C# events) but how it is interacted with. Any input set-up from inside of Unity's input system is compatible, from keyboard input to [VR motion controllers](https://docs.unity3d.com/Manual/xr_input.html). 
 
 ![stack](images/stack.png)
 
