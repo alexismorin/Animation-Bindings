@@ -22,4 +22,4 @@ At the simplest level, the *Animation Bindings* system allows the animator to ea
 
 ![links](images/links.png)
 
-- On the various limbs and possessions of your puppets, the user will add **Animation Link** components that can fetch data from their associated animation binding and affect the game object in various way. At runtime, IK targets twist and turn, particle systems flash and shaders wax and wane at the user's touch. With no limit on how many Animation Link components you can have on a single game object, extremely complex animation setups can be devised.
+- On the various limbs and possessions of your puppets, the user can add **Animation Link** components that can fetch data from their associated Animation Binding component and affect the game object in various way. At runtime, IK targets twist and turn, particle systems flash and shaders wax and wane at the user's touch. With no limit on how many Animation Link components you can have on a single game object, extremely complex animation setups can be devised.
