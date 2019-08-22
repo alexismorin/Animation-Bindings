@@ -26,7 +26,7 @@ At the simplest level, the *Animation Bindings* system allows the animator to ea
 
 ![commonevents](images/commonevents.png)
 
-- The scene set up, the user can can either bake down the ensuing animations with the [Unity Recorder](https://unitytech.github.io/unity-recorder/manual/index.html), [Alembic Exporter](https://docs.unity3d.com/Packages/com.unity.formats.alembic@1.0/manual/time_InfiniteClip.html) for use in linear content or keep the system runtime-ready for interactive experiences.
+- The scene set up, the user can can either bake down the ensuing animations with the [Unity Recorder](https://unitytech.github.io/unity-recorder/manual/index.html), [Alembic Exporter](https://docs.unity3d.com/Packages/com.unity.formats.alembic@1.0/manual/time_InfiniteClip.html) for use in linear content or keep their animation system runtime-ready for interactive experiences.
 
 ### Extending the System
 
