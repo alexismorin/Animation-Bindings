@@ -16,40 +16,51 @@ public class AnimationBinding : MonoBehaviour
     [SerializeField]
     string axisInput = "Vertical";
     [SerializeField]
-    float delay = 0f;
+    float inputDelay = 0f;
+    [SerializeField]
+
+    [Space(10)]
+
+    float inputNoiseMagnitude = 0f;
+    [SerializeField]
+    float inputNoiseSpeed = 1f;
 
     [HideInInspector]
     public List<AnimationLink> links = new List<AnimationLink>();
 
-
-
     void OnValidate()
     {
-        gameObject.name = booleanInput.ToString() + " / " + axisInput + " - Max. Value " + maximumValue;
+        gameObject.name = booleanInput.ToString() + " / " + axisInput + " - Maximum " + maximumValue + " - Noise " + inputNoiseMagnitude;
     }
 
 
 
     void Update()
     {
+        float outputAdditiveNoise = 0f;
+
+        if (inputNoiseMagnitude > 0)
+        {
+            outputAdditiveNoise = (Mathf.PerlinNoise(Time.timeSinceLevelLoad * inputNoiseSpeed, 0.5f) - 0.5f) * inputNoiseMagnitude;
+        }
 
         if (!Input.GetKey(booleanInput))
         {
             if (axisInput != "")
             {
-                currentValue = Input.GetAxis(axisInput) * maximumValue;
+                currentValue = Input.GetAxis(axisInput) * maximumValue + outputAdditiveNoise;
             }
 
         }
 
         if (Input.GetKeyDown(booleanInput))
         {
-            Invoke("Press", delay);
+            Invoke("Press", inputDelay);
         }
 
         if (Input.GetKeyUp(booleanInput))
         {
-            Invoke("Release", delay);
+            Invoke("Release", inputDelay);
         }
 
     }
@@ -68,4 +79,5 @@ public class AnimationBinding : MonoBehaviour
     {
         currentValue = 0f;
     }
+
 }
