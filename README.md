@@ -1,5 +1,5 @@
 # e→d films Animation Bindings
-### Customizeable input system to puppeteer animation inside of Unity 
+### Customizeable Input System to Puppeteer Animation Inside of Unity 
 
 ### About
 This proposed animation system values and embraces the real time, human user interface driven nature of game engines and strives to use that to craft naturalistic, organic animation with unprecedented ease and speed. The director becomes a puppeteer, actively embodying every important, living creature and acted entity on set. They will sculpt a nuanced performance one pass at a time. 
