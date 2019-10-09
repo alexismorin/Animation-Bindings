@@ -36,6 +36,13 @@ public class AnimationLink : MonoBehaviour
     [SerializeField]
     string customMethodName;
 
+    [Space(5)]
+
+    [SerializeField]
+    Component affectedComponent;
+
+
+
     void Start()
     {
         animationBinding.links.Add(this);
