@@ -36,4 +36,4 @@ Relying on only three components, the Animation Bindings is easily extendable if
 
 
 
-Crafted by [Alexis Morin](https://github.com/alexismorin) in friendly partnership with [e→d films](https://edfilms.net/)
+Crafted by [Alexis Morin](https://github.com/alexismorin) in a friendly partnership with [e→d films](https://edfilms.net/)
