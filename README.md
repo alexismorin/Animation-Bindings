@@ -1,3 +1,5 @@
+![gif](images/gif.gif)
+
 # e→d films Animation Bindings
 ### Customizeable Input System to Puppeteer Animation Inside of Unity 
 
