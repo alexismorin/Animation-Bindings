@@ -3,8 +3,9 @@ guid: fbedd0d0a0f2d5247aea564e52245c62
 ShaderImporter:
   externalObjects: {}
   defaultTextures:
-  - _Foil: {fileID: 2800000, guid: 5ffe02d4f1328cd419389a6fd1568d1b, type: 3}
   - _CloudNoise: {fileID: 2800000, guid: 19d47ac925e332049b84ec563c22a94d, type: 3}
+  - _N_Paint: {fileID: 2800000, guid: ed0b64302719eac4798f43bd3634e9bd, type: 3}
+  - _Foil: {fileID: 2800000, guid: 5ffe02d4f1328cd419389a6fd1568d1b, type: 3}
   nonModifiableTextures: []
   userData: 
   assetBundleName: 

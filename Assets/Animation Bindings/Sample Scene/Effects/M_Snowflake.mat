@@ -64,7 +64,7 @@ Material:
     - _CameraFarFadeDistance: 2
     - _CameraNearFadeDistance: 1
     - _ColorMode: 0
-    - _Cull: 2
+    - _Cull: 0
     - _Cutoff: 0.546
     - _DetailNormalMapScale: 1
     - _DistortionBlend: 0.5
@@ -92,7 +92,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 0.8490566, g: 0.76495194, b: 0.76495194, a: 1}
+    - _Color: {r: 1.481643, g: 1.3314303, b: 1.3314303, a: 1}
     - _ColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}

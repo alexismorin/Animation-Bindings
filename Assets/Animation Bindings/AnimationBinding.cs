@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class AnimationBinding : MonoBehaviour
 {
+    [Header("Value Modulation")]
+
+    [HideInInspector]
     [SerializeField]
     public float currentValue = 0f;
     [SerializeField]
-    float maximumValue = 1f;
+    AnimationCurve animationCurve = AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 
     [Space(10)]
+
+    [Header("Input")]
 
     [SerializeField]
     KeyCode booleanInput = KeyCode.Space;
@@ -21,6 +26,8 @@ public class AnimationBinding : MonoBehaviour
 
     [Space(10)]
 
+    [Header("Noise")]
+
     float inputNoiseMagnitude = 0f;
     [SerializeField]
     float inputNoiseSpeed = 1f;
@@ -30,7 +37,7 @@ public class AnimationBinding : MonoBehaviour
 
     void OnValidate()
     {
-        gameObject.name = booleanInput.ToString() + " / " + axisInput + " - Maximum " + maximumValue + " - Noise " + inputNoiseMagnitude;
+        gameObject.name = booleanInput.ToString() + " / " + axisInput + " - Maximum " + animationCurve.keys[animationCurve.length - 1].value + " - Noise " + inputNoiseMagnitude;
     }
 
 
@@ -48,7 +55,7 @@ public class AnimationBinding : MonoBehaviour
         {
             if (axisInput != "")
             {
-                currentValue = Input.GetAxis(axisInput) * maximumValue + outputAdditiveNoise;
+                currentValue = animationCurve.Evaluate(Mathf.Abs(Input.GetAxis(axisInput))) * Input.GetAxis(axisInput) + outputAdditiveNoise;
             }
 
         }
@@ -67,7 +74,7 @@ public class AnimationBinding : MonoBehaviour
 
     void Press()
     {
-        currentValue = maximumValue;
+        currentValue = animationCurve.keys[animationCurve.length - 1].value;
 
         for (int i = 0; i < links.Count; i++)
         {
